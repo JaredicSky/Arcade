@@ -2,26 +2,44 @@ CODE TEMPLATE:
 //This is a single line comment (notes that won't be read as instructions to the computer).
 //Different syntax is used for comments depending on the language.
 
-//CHANGE ME: Add the title of your game
-//Add your first and last name 
+//Final Fantasy XIV
+//Johan Rodriguez
 
-
-if (CHANGE ME: condition # 1) {
-    //Add event below
+//Healer: Astrologian
+if (in combat and draw is off cooldown) {
+    draw card and play on party member;
 } else {
-    //Add event below
+    if (party member hp < 50%) {
+        heal party member;
+    } else {
+        cast damage spells;
+    }
 }
 
-if (CHANGE ME: condition # 2) {
-    //Add event below
+//DPS: Dancer
+if (dance partner is not on party member) {
+    place it on other dps;
 } else {
-    //Add event below
-}
+    if (standard/technical step is off cooldown) {
+        use standard/technical step;
+    } else {
+        use damage skills;
+    }
+} 
 
-if (CHANGE ME: condition # 3) {
-    //Add event below
+//Tank: Dark Knight
+if (tank stance is off) {
+    turn on tank stance;
 } else {
-    //Add event below
+    if (enemy agro is not on Dark Knight) {
+        use provoke;
+    } else {
+        if (boss deals damage >= 50% hp) {
+            use damage mitigation;
+        } else {
+            use damage skills;
+        } 
+    }
 }
 
 
